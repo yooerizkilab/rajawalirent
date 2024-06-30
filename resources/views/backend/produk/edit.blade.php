@@ -20,10 +20,10 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card border-left-primary shadow h-100 py-2">
-                <form action="{{ url('admin/produk/'. $produk->id) }}" method="POST" enctype="multipart/form-data">
-                    <input type="hidden" name="_method" value="PUT">
+                <form action="{{ url('admin/produk/update/'. $produk->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     {{ method_field('PUT') }}
+                    <input type="hidden" name="_method" value="PUT">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="card-body">
