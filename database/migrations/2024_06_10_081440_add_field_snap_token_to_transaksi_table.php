@@ -15,7 +15,7 @@ class AddFieldSnapTokenToTransaksiTable extends Migration
     {
         Schema::table('transaksi', function (Blueprint $table) {
             $table->string('pay')->nullable()->default(null)->after('status');
-            $table->string('snap_token')->after('pay');
+            $table->string('snap_token')->nullable()->default(null)->after('pay');
         });
     }
 
