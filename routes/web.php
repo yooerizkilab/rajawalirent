@@ -10,7 +10,7 @@ use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Artisan;
+// use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +23,9 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 
-Route::get('/storage', function () {
-    Artisan::call('storage:link');
-});
+// Route::get('/storage', function () {
+//     Artisan::call('storage:link');
+// });
 
 // Home
 Route::get('/', [WelcomeController::class, 'index']);
