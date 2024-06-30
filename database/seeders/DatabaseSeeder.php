@@ -14,13 +14,13 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
 
-    public function run()
-    {
-        User::factory(1)->create();
-        Produk::factory(5)->create();
-    }
     // public function run()
     // {
-    //     $this->call(UserTableSeeder::class);
+    //     User::factory(1)->create();
+    //     Produk::factory(5)->create();
     // }
+    public function run()
+    {
+        $this->call(UserTableSeeder::class);
+    }
 }
